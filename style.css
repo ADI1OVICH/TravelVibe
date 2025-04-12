@@ -20,21 +20,20 @@ h1, h2, h3 {
     width: 100%;
     top: 0;
     background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 
 .nav {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 700;
     color: #2c6e49;
 }
@@ -204,17 +203,31 @@ h1, h2, h3 {
     }
 
     /* Навигация */
+    .header {
+        background: #fff;
+    }
     .nav {
         flex-direction: column;
-        padding: 10px;
+        padding: 8px 15px;
+    }
+    .logo {
+        font-size: 1.1em;
     }
     .nav-links {
         flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
+        gap: 5px;
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
     }
     .nav-links a {
-        font-size: 0.9em;
+        font-size: 0.85em;
+        padding: 8px 0;
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+    .nav-links a:last-child {
+        border-bottom: none;
     }
 
     /* Секции */
@@ -230,12 +243,12 @@ h1, h2, h3 {
     .hotels-grid,
     .routes-grid,
     .reviews-grid {
-        grid-template-columns: 1fr; /* Одна колонка */
+        grid-template-columns: 1fr;
         gap: 15px;
     }
     .place-card img,
     .hotel-card img {
-        height: 150px; /* Уменьшаем высоту картинок */
+        height: 150px;
     }
     .place-card h3,
     .hotel-card h3,
