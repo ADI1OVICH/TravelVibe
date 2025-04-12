@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия с вдохновением</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">TravelVibe</div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#places">Места</a></li>
+                <li><a href="#hotels">Отели</a></li>
+                <li><a href="#routes">Маршруты</a></li>
+                <li><a href="#booking">Бронирование</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Открой мир с TravelVibe</h1>
+            <p>Ищи лучшие места, отели и маршруты для своего приключения</p>
+            <a href="#booking" class="btn">Забронировать</a>
+        </div>
+    </section>
+
+    <!-- Туристические места -->
+    <section id="places" class="section">
+        <h2>Популярные направления</h2>
+        <div class="places-grid">
+            <div class="place-card">
+                <img src="https://icdn.bolshayastrana.com/1200x00/24/b5/24b5059fb8e53351be747d2e5a6a4555.jpeg" alt="Место 1">
+                <h3>Горы Алтая</h3>
+                <p>Невероятные пейзажи и чистый воздух.</p>
+            </div>
+            <div class="place-card">
+                <img src="https://cdn.tripster.ru/thumbs2/9b55e054-046d-11ee-8fc8-223f6c50dd99.1220x600.jpeg" alt="Место 2">
+                <h3>Озеро Байкал</h3>
+                <p>Самое глубокое озеро в мире.</p>
+            </div>
+            <div class="place-card">
+                <img src="https://kompastour.com/useruploads/regions/region_7a56d6be2b.jpg" alt="Место 3">
+                <h3>Боровое</h3>
+                <p>Солнце, море и история.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отели -->
+    <section id="hotels" class="section">
+        <h2>Лучшие отели</h2>
+        <div class="hotels-grid">
+            <div class="hotel-card">
+                <img src="https://www.menslife.com/upload/iblock/4f1/marina_bay_sands_hotel_casino_skypark_singapore_from_waterfront_esplanade.jpg" alt="Отель 1">
+                <h3>Grand Hotel</h3>
+                <p>5 звезд, бассейн, спа.</p>
+                <span class="price">От 12000 ₽/ночь</span>
+            </div>
+            <div class="hotel-card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/f8/1c/13/padma-resort-ubud.jpg?w=1200&h=-1&s=1" alt="Отель 2">
+                <h3>Sea Breeze</h3>
+                <p>Вид на море, завтрак включен.</p>
+                <span class="price">От 8000 ₽/ночь</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Маршруты -->
+    <section id="routes" class="section">
+        <h2>Готовые маршруты</h2>
+        <div class="routes-grid">
+            <div class="route-card">
+                <h3>Алтайский трек</h3>
+                <p>7 дней, поход по горам.</p>
+            </div>
+            <div class="route-card">
+                <h3>Байкальская одиссея</h3>
+                <p>5 дней, тур по озеру.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бронирование -->
+    <section id="booking" class="section">
+        <h2>Забронировать</h2>
+        <form action="https://getform.io/f/bmdkovqa" method="post" class="booking-form">
+            <input type="hidden" name="redirect_to" value="https://твойсайт/thank-you.html">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="date" name="date" required>
+            <select name="destination" required>
+                <option value="" disabled selected>Выберите направление</option>
+                <option value="Горы Алтая">Горы Алтая</option>
+                <option value="Озеро Байкал">Озеро Байкал</option>
+                <option value="Крым">Крым</option>
+            </select>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="section">
+        <h2>Отзывы путешественников</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="rating">★★★★★</div>
+                <p>"Незабываемое приключение на Алтае! Горы, природа — всё потрясающе."</p>
+                <span>— Анна, 2024</span>
+            </div>
+            <div class="review-card">
+                <div class="rating">★★★★☆</div>
+                <p>"Байкал — это магия природы, но дорога утомила."</p>
+                <span>— Иван, 2024</span>
+            </div>
+            <div class="review-card">
+                <div class="rating">★★★☆☆</div>
+                <p>"Крым красивый, но сервис в отеле подкачал."</p>
+                <span>— Мария, 2024</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <p>&copy; 2025 TravelVibe. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
